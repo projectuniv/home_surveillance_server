@@ -1,0 +1,30 @@
+#contacts-api{
+				width: 35em;
+				background: #6a7fe4;
+				border-radius: 5px;
+				border: 1px solid blue;
+				margin: 0px auto;
+			}
+			#contacts-api form{
+				background-color: white; border-radius: 5px;;
+				
+			}
+			#contacts-api table{width: 100%; margin: 0px auto;}
+			#contacts-api table, #contacts-api td{ margin: 1px;}
+			td{padding: 5px; background: #6a7fe4;}
+			input{ width: 90%; padding: 4px;}
+			#data-container{
+				width: 100%;
+				min-height: 10em;
+				background-color: white;
+				margin-bottom: 2em;
+			}
+			.left-div, .right-div{
+				width: 48%;
+				min-height: 25em;
+				display: inline-block;
+				border: 2px solid black;
+				margin-bottom: 2em;
+			}
+			#db_contact_table{ width: 100%;}
+			#db_contact_table td {width: 33%;}
