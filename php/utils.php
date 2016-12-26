@@ -3,7 +3,13 @@ require_once('dbconfig.php');
 
 //Fonction de connection à la db
 function connectDB(){
-	$co = new mysqli(SERVER, USER, PWD, DBNAME);
+	$co = null;
+	$env = getenv('HTTP_HOST');
+	if($env != 'localhost')
+		$co = new mysqli(SERVER2, USER2, PWD2, DBNAME2);
+	else $co = new mysqli(SERVER, USER, PWD, DBNAME);
+
+
 	if($co->errno) die( $co->error);
 	return $co;
 }
